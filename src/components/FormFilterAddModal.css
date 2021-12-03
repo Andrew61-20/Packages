@@ -1,0 +1,13 @@
+.formcl {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    justify-content: space-between
+}
+
+.btcl {
+    margin-bottom: 20px;
+    width: 150px;
+    border-radius: 5px
+}

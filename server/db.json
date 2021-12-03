@@ -1,0 +1,46 @@
+{
+  "packages": [
+    {
+      "number": "0001",
+      "status": "in process",
+      "location": "Kyiv",
+      "count": 5,
+      "id": 1
+    },
+    {
+      "number": "0002",
+      "status": "success",
+      "location": "Vinnytsya",
+      "count": 7,
+      "id": 2
+    },
+    {
+      "number": "0003",
+      "status": "failed",
+      "location": "Odessa",
+      "count": 1,
+      "id": 3
+    },
+    {
+      "number": "0004",
+      "status": "success",
+      "location": "Kharkiv",
+      "count": 15,
+      "id": 4
+    },
+    {
+      "number": "0006",
+      "status": "failed",
+      "location": "Lviv",
+      "count": 2,
+      "id": 5
+    },
+    {
+      "number": "0005",
+      "status": "success",
+      "location": "Odessa",
+      "count": 15,
+      "id": 6
+    }
+  ]
+}
