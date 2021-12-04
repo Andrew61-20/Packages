@@ -24,12 +24,12 @@ closeModal = () => {
 
 rem = (active) => {
     const {data, update} = this.props
-    const ind = data.find(item => item.id === active.id)
+    const ind = data.find(item => item.id === active)
     if (ind) {
-        API.deletePckgItem(active.id).then(isOk => {
+        API.deletePckgItem(active).then(isOk => {
             if (!isOk) return;
             update ({
-                data: data.filter(pckg => pckg.id !== active.id),
+                data: data.filter(pckg => pckg.id !== active),
                 active: null
             });
         });
@@ -41,7 +41,7 @@ render() {
     const { data, active, load, update } = this.props;
     return (
         <div className="toolbar">
-            {active !== null ? <button className="btn btn-default" onClick={() => this.rem(data[active])}> 
+            {active !== null ? <button className="btn btn-default" onClick={() => this.rem(active)}> 
                 Удалить
             </button> :
             <button disabled className="btn btn-default">

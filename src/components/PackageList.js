@@ -4,10 +4,10 @@ import PackageData from "./PackageData";
 export default ({data, active, update}) => {
     if(!data) {return (<p>Loading...</p>);}
 
-    const packages = data.map((pckg, index) => {
+    const packages = data.map(pckg => {
         return (
             <PackageData pckg={pckg} data={data} active={active} 
-                         index={index} key={`package-${index}`} update={update} />
+                         key={pckg.id} update={update} />
         )
     });
 
